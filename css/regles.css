@@ -1,0 +1,42 @@
+.header__nav--title a
+{
+    color: #f1a700;
+    border-bottom: solid 5px #f1a700;
+    padding-bottom: 2.2em;
+}
+/* Page reglement */
+.regles
+{
+    margin: 50px;
+}
+    .regles h2
+    {
+        margin-right: 50px;
+    }
+    .regles p
+    {
+        margin-right: 100px;
+        margin-left: 50px;
+    }
+footer
+{
+    margin-top: 200px;
+}
+@media screen and (max-width: 1249px) {
+    .regles
+    {
+        flex-wrap: wrap;
+    }
+        .regles h2
+        {
+            margin-right: 0px;
+        }
+        .regles p
+        {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    .texte {
+        padding: 0;
+    }
+}
