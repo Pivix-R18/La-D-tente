@@ -1,0 +1,58 @@
+.header__nav--title a
+{
+    color: #f1a700;
+    border-bottom: solid 5px #f1a700;
+    padding-bottom: 2.2em;
+}
+/* PAGE PROPOS */
+.texte
+{
+    padding: 0;
+}
+.propos
+{
+    margin-top: 50px;
+}
+    .propos_mods
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .propos_fond
+    {
+        background-color: #1c1c1c;
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+.staff
+{ 
+    text-align: center;
+    margin-top: 50px;
+}
+.staff_membre
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+    .staff_name img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    .staff_name
+    {
+        margin-bottom: 50px;
+    }
+        .rouge
+        {
+            color: red;
+        }
+        .bleu
+        {
+            color: aqua;
+        }
