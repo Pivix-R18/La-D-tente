@@ -11,11 +11,6 @@
     margin-bottom: 50px;
 }
 
-/* AUDIO LOL */
-.audio {
-    text-align: center;
-    margin-top: 100px;
-}
 /* SILDER  */
 
 * {box-sizing:border-box}
@@ -85,3 +80,11 @@
   to {opacity: 1}
 }
 
+@media screen and (max-width: 900px) {
+    .header__nav--title a
+    {
+        color: #f1a700;
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}

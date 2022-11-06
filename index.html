@@ -7,6 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/accueil.css">
+    <link rel="stylesheet" href="./css/mq-mobile.css">
     <title>La détente | Acceuil</title>
 </head>
 <body>
@@ -16,14 +17,19 @@
     <header>
         <div class="header h2">
             <h2 class="header__titre">La Détente</h2>
-            <nav>
-                <ul>
-                    <li class="header__nav--title"><a href="./index.html"><span>Acceuil</span></a></li>
-                    <li><a href="./vote.html"><span>Vote</span></a></li>
-                    <li><a href="./regles.html"><span>Réglement</span></a></li>
-                    <li><a href="./photo.html"><span>Photo</span></a></li>
-                    <li><a href="./propos.html"><span>À propos</span></a></li>
-                </ul>
+
+            <!-- Media screen (max-width: 900px) -->
+            <nav class="navbar">
+                <div class="nav_menu">
+                    <ul>
+                        <li class="header__nav--title"><a href="./index.html"><span>Acceuil</span></a></li>
+                        <li><a href="./vote.html"><span>Vote</span></a></li>
+                        <li><a href="./regles.html"><span>Réglement</span></a></li>
+                        <li><a href="./photo.html"><span>Photo</span></a></li>
+                        <li><a href="./propos.html"><span>À propos</span></a></li>
+                    </ul>
+                </div>
+                <i class='bx bx-menu nav_phone'></i>
             </nav>
         </div>
     </header>
@@ -98,5 +104,13 @@
             </p>
          </div>
     </footer>
+    <script>
+        const menuHamburger = document.querySelector(".nav_phone")
+        const navLinks = document.querySelector(".nav_menu")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </body>
 </html>

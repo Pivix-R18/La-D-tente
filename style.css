@@ -117,6 +117,7 @@ footer
         margin: 50px 00px 50px 00px;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
         .footer__nav
         {

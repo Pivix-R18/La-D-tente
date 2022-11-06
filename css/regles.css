@@ -40,3 +40,11 @@ footer
         padding: 0;
     }
 }
+@media screen and (max-width: 900px) {
+    .header__nav--title a
+    {
+        color: #f1a700;
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}

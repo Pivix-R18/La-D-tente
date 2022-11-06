@@ -34,3 +34,27 @@ section > div
             min-width: 200px;
             max-width: 600px;
         }
+
+@media screen and (max-width: 900px) {
+    .header__nav--title a
+    {
+        color: #f1a700;
+        border-bottom: solid 0px #ff0000;
+        padding-bottom: 0px;
+    }
+    .nav a:hover
+    {
+        color: #f1a700;
+        border-bottom: 0px;
+    }
+    .article1 img {
+        display: none;
+    }
+    .article1
+    {
+        margin-right: 0px;
+    }
+    .texte {
+        padding: 0;
+    }
+}
