@@ -59,6 +59,11 @@
         border-bottom: 0px;
         padding-bottom: 0px;
     }
+    nav a:hover
+    {
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    } 
     .vote {
         margin: 0;
         margin-bottom: 25px;

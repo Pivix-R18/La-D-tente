@@ -9,7 +9,11 @@
 
 
 @media screen and (max-width: 900px) {
-
+    nav a:hover
+    {
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    } 
     .nav_menu{
         position: absolute;
         width: 100%;
