@@ -46,7 +46,7 @@
     }
     .staff_name
     {
-        margin-bottom: 50px;
+        margin: 15px;
     }
         .rouge
         {
@@ -55,6 +55,10 @@
         .bleu
         {
             color: aqua;
+        }
+        .orchid
+        {
+            color: orchid;
         }
 @media screen and (max-width: 900px) {
     .header__nav--title a
