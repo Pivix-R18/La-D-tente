@@ -60,11 +60,29 @@
         {
             color: orchid;
         }
+.banniere img {
+   position: relative;
+    top: -100px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    margin-bottom: -80px;
+    margin-top: 15px;
+}
 @media screen and (max-width: 900px) {
     .header__nav--title a
     {
         color: #f1a700;
         border-bottom: 0px;
         padding-bottom: 0px;
+    }
+    .banniere img {
+        position: relative;
+        top: -50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .propos_mods {
+        justify-content: center;
     }
 }
