@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/eco.css">
+    <link rel="stylesheet" href="./css/mq-mobile.css">
+    <title>La détente | Zone Shop</title>
+</head>
+<body>
+    <!-- Shift + Alt + A : Insérer un bloc de commentaire -->
+
+    <!-- Header -->
+    <header>
+        <div class="header h2">
+            <h2 class="header__titre">La Détente</h2>
+            <nav class="navbar">
+                <div class="nav_menu">
+                    <ul>
+                        <li><a href="./index.html"><span>Accueil</span></a></li>
+                        <li><a href="./vote.html"><span>Vote</span></a></li>
+                        <li class="deroulant"><a href="#">Serveur <i class='bx bxs-chevron-down'></i></a>
+                            <ul class="sous">
+                              <li><a href="./regles.html">Réglement</a></li>
+                              <li><a href="./eco.html">Zone Shop</a></li>
+                              <li><a href="./commands.html">Les commandes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./photo.html"><span>Photo</span></a></li>
+                        <li><a href="./donation.html"><span>Donation</span></a></li>
+                        <li><a href="./propos.html"><span>À propos</span></a></li>
+                    </ul>
+                </div>
+                <i class='bx bx-menu nav_phone'></i>
+            </nav>
+        </div>
+    </header>
+    <section class="texte h2 eco">
+        <h2>Comment fonctionne la zone shop ?</h2>
+        <div>
+            <p>
+                La monnaie est le diamant. Pour en obtenir, vous pouvez miner, vendre des objets ou des services, participer à des événements, mendier si vous le voulez, ...
+            </p>
+            <p>
+                <span class="texte__bolt">Acheter en zone shop:</span>
+                <br>
+                <br>Vous pouvez trouver le prix des marchandises sur un objet renommé dans un cadre, un panneau, un objet renommé dans le coffre/tonneau, un pupitre ou encore en titre du coffre/tonneau (en haut à gauche quand vous l'ouvrez).
+                <br>Sauf consigne contraire du vendeur, il vous suffit de remplacer l'objet que vous voulez acheter par sa valeur en diamant dans le coffre/tonneau.
+            </p>
+            <p>
+                <span class="texte__bolt">Vendre en zone shop</span>
+                <ul>
+                    <li>3 shops <span style="color:red;">MAXIMALE</span> par joueur. Si vous voulez gérer un shop à deux, il sera considéré que chacun de vous possède 1 shop.</li>
+                    <li>3 shops <span style="color:red;">MAXIMALE</span> par joueur. Si vous voulez gérer un shop à deux, il sera considéré que chacun de vous possède 1 shop.
+                    <li>Interdiction de construire un centre commercial, qui vendrait énormément d'objet. Laissons de la place pour les autres, nous encourageons les petit commerces spécialisés. (D'où la possibilité d'avoir jusqu'à 3 shops)
+                    <li>La taille <span style="color:red;">MAXIMALE</span> autorisée est de 30x30x30.
+                    <li>Construisez votre shop proche des chemins.
+                    <li>Faites un effort dans le design de votre shop pour garder une jolie zone commerciale (Pas de gros bâtiment cubique en terre par exemple). Du bon sens dans la construction, adaptez votre shop à ce que vous vendez (Pas de building 30x30x30 pour n'y vendre que des flèches par exemple).
+                    <li>Pour éviter la concurrence déloyale, vous ne pouvez pas vendre moins cher le même objet qu'un vendeur déjà présent. Si un joueur vend du bois de chêne à 1d le stack, vous ne pourrez pas en vendre à 1d les 2 stacks. Ce sera au moins 1d / 64.
+                    <li>Le staff se réserve le droit de demander aux joueur de modifier, déplacer ou supprimer un shop qui n'entre pas dans les critères cités.
+                </ul>
+            </p>
+            <p>
+                Afin de garder une zone commerciale dynamique, merci de veillez à ce que votre shop soit approvisionné régulièrement. Si vous n'êtes plus disponible, les prix seront à nouveau libres pour le prochain vendeur. Après discussion avec vous, votre shop pourra être fermé, vendu ou supprimé. Sans réponse de votre part ou sans accord entre le staff et vous, le staff se réserve le droit de prendre une décision.
+               <br>Vous connecter de temps en temps uniquement dans le but de réapprovisionner votre shop est considéré comme une absence. Cela revient à priver les joueurs actifs d'avoir ce commerce.
+               <br>Vous pourrez bien sûr recommencer un vie commerciale à votre retour.
+            </p>
+            <p>Nous encourageons la circulation des diamants, vendez, achetez !</p>
+            <p style="color:red;">En cas de vol, contactez un fondateur ou un administrateur. Nous avons accès aux logs.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer flexbox centre nav--none">
+            <div class="footer__nav ">
+                <i class='bx bx-tada bx-fw bxl-discord-alt'></i>
+                <a href="https://discord.gg/2UCYQgqfp5" title="Lien discord" target="_blank">Notre Discord</a>
+            </div>
+            <div class="footer__nav">
+                <i class='bx bx-fw bx-server'></i>
+                <span class="ip">IP: ladetente.mine.fun</span>
+            </div>
+        </div>
+         <div class="centre footer-end">
+            <p>
+                © 2022 La Détente - réalisé par Leny15
+            </p>
+         </div>
+    </footer>
+    <script>
+        const menuHamburger = document.querySelector(".nav_phone")
+        const navLinks = document.querySelector(".nav_menu")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
