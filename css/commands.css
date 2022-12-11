@@ -1,0 +1,10 @@
+.command {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .texte {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
