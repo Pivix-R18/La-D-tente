@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/vote.css">
     <title>La détente | Vote</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Shift + Alt + A : Insérer un bloc de commentaire -->
@@ -45,24 +46,51 @@
             </p>
         </div>
     </section>
-        <div class="nav--none texte flexbox-s">
-            <div class="btn vote">
-                <p>Serveur privé</p>
-                <a href="https://serveur-prive.net/minecraft/la-detente-12954/vote" title="Lien de vote" target="_blank">Go</a>
+
+        <div class="bloc">
+            <div class="bloc2">
+                <div id="site">
+                <h2>Les sites de votes</h2>
+                <ul>
+                    <li><a href="https://serveur-prive.net/minecraft/la-detente-12954/vote" title="Lien de vote" target="_blank">Serveur-Prive</a></li>
+                    <li><a href="https://www.planetminecraft.com/server/la-d-tente/vote/" title="Lien de vote" target="_blank">Planet Minecraft</a></li>
+                    <li><a href="https://www.serveurs-minecraft.org/vote.php?id=62963" title="Lien de vote" target="_blank">Serveur-Minecraft</a></li>
+                    <li><a href="https://top-serveurs.net/minecraft/la-detente" title="Lien de vote" target="_blank">Top-Serveur</a></li>
+                </ul>
+                </div>
             </div>
-            <div class="btn vote">
-                <p>Top serveurs</p>
-                <a href="https://top-serveurs.net/minecraft/la-detente" title="Lien de vote" target="_blank">Go</a>
+        
+            <div class="tableau">
+                <h2>Classement</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Top</th>
+                            <th>Nom</th>
+                            <th>Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="votetable">
+                    </tbody>
+                </table>
             </div>
-            <div class="btn vote">
-                <p>Planet minecraft</p>
-                <a href="https://www.planetminecraft.com/server/la-d-tente/vote/" title="Lien de vote" target="_blank">Go</a>
-            </div>
-            <div class="btn vote">
-                <p>Serveurs-Minecraft.org</p>
-                <a href="https://www.serveurs-minecraft.org/vote.php?id=62963" title="Lien de vote" target="_blank">Go</a>
+
+            <div class="tableau">
+                <h2>Classement du mois précédent</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Top</th>
+                            <th>Nom</th>
+                            <th>Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="votetable2">
+                    </tbody>
+                </table>
             </div>
         </div>
+        
     <footer>
         <div class="footer flexbox centre nav--none">
             <div class="footer__nav ">

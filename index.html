@@ -48,11 +48,23 @@
         </div>
     </header>
     
-    <!-- Bannière -->
-    <div class="banniere">
-        
-        <img src="./images/BannièreNoel.png" alt="Bannière">
+     <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./images/spawn.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="./images/shop.png" style="width:100%">
+        </div>
     </div>
+<!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
     <!-- Bloc #1 -->
     <section>
         <div class="centre nav--none titre--grand margin-bottom--20px">
@@ -89,7 +101,7 @@
                     <h2>Comment s'organise la communauté sur ce serveur ?</h2>
                     <img class="img3" src="./images/eco.png" alt="">
                     <p>
-                        Il y a deux catégories: l’Economie et le Communautaire.
+                        Il y a deux catégories: l'Economie et le Communautaire.
                         <br>- Economie : droit de construire des shops, pas le droit d'accéder aux fermes communautaires.
                         <br>- Communautaire: droit d'accès aux fermes communautaires, pas le droit de construire des shops.
                         <br>Les fermes communautaires sont les fermes gratuites et libres d'accès.
@@ -163,6 +175,27 @@
          </div>
     </footer>
     <script>
+        let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image  2 seconds = 2000
+            }
+
+        /* Menu phone*/ 
         const menuHamburger = document.querySelector(".nav_phone")
         const navLinks = document.querySelector(".nav_menu")
  
